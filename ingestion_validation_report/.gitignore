@@ -1,0 +1,6 @@
+# Ignore all validation reports
+*.json
+*.txt
+
+# But keep this directory in git
+!.gitignore

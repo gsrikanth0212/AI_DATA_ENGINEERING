@@ -1,0 +1,22 @@
+# Example Terraform variables file
+# Copy this file to terraform.tfvars and update with your values
+
+aws_region = "us-east-1"
+
+# Network Configuration
+vpc_cidr           = "10.0.0.0/16"
+subnet_a_cidr      = "10.0.1.0/24"
+subnet_b_cidr      = "10.0.2.0/24"
+availability_zone_a = "us-east-1a"
+availability_zone_b = "us-east-1b"
+
+# RDS Configuration
+db_identifier        = "orders-db"
+db_engine_version    = "15.4"
+db_instance_class    = "db.t3.micro"
+db_allocated_storage = 20
+db_name              = "order_management"
+db_username          = "dbadmin"
+
+# IMPORTANT: Set this via environment variable or in terraform.tfvars (not committed to git)
+# db_password = "YourSecurePassword123!"
